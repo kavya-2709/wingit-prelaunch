@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en-IN" class="no-js">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wingit — Try premium beauty on your own skin, at home. Launching in NCR.</title>
+  <meta name="description" content="Wingit brings premium makeup, skincare and fragrance to your home with sealed testers and a beauty partner. Try everything on your own skin and pay only for what you keep. Launching soon in NCR." />
+  <meta name="theme-color" content="#7A0E3A" />
+  <meta property="og:title" content="Wingit — Your skin gets the final say." />
+  <meta property="og:description" content="Premium beauty, tried on your own skin at home. Pay only for what you keep. Launching soon in NCR." />
+  <meta property="og:image" content="assets/img/wink.webp" />
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/fonts/fraunces-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/instrument-sans-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css" />
+  <script>document.documentElement.classList.remove("no-js")</script>
+  <script src="config.js"></script>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <!-- Shared SVG defs: the "sketch" filter gives every doodle the same hand-drawn wobble. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="7" />
+        <feDisplacementMap in="SourceGraphic" scale="2.2" />
+      </filter>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 1c.9 6.6 3.4 9.4 10 11-6.6 1.1-9.1 3.9-10 11-.9-7.1-3.4-9.9-10-11 6.6-1.6 9.1-4.4 10-11Z" /></symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="prelaunch-bar" role="region" aria-label="Launch status">
+    <p>
+      <span class="pulse" aria-hidden="true"></span>
+      <span>Wingit is getting ready to open in <strong>NCR</strong>.</span>
+      <a href="#join">Join the first list <span aria-hidden="true">→</span></a>
+    </p>
+  </div>
+
+  <header class="site-header" data-header>
+    <nav class="nav container" aria-label="Primary">
+      <a class="nav__logo" href="#top" aria-label="Wingit — back to top">
+        <img src="assets/img/wingit-logo.png" alt="Wingit" width="120" height="38" />
+      </a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu" data-nav-toggle>
+        <span class="visually-hidden">Menu</span>
+        <span class="nav__toggle-bars" aria-hidden="true"></span>
+      </button>
+      <div class="nav__menu" id="nav-menu" data-nav-menu>
+        <ul class="nav__links">
+          <li><a href="#idea">The idea</a></li>
+          <li><a href="#how">How a trial works</a></li>
+          <li><a href="#clean">Hygiene</a></li>
+          <li><a href="#story">Our story</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm" href="#join">Join the first list</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- ───────────────────────── HERO ───────────────────────── -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow rise"><span class="eyebrow__dash" aria-hidden="true"></span>At-home beauty trials · Launching in NCR</p>
+          <h1 class="hero__title rise" id="hero-title">
+            Your skin gets the
+            <span class="circled">final&nbsp;say.<svg class="circled__mark draw sketch" viewBox="0 0 300 90" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M18 46C14 20 92 8 160 10c70 2 128 14 126 38-2 25-84 36-150 34C66 80 8 70 12 44 15 26 64 12 120 10" /></svg></span>
+          </h1>
+          <p class="hero__lede rise">
+            Wingit brings premium makeup, skincare and fragrance to your door — sealed full-size products, a tester of each, and a beauty partner by your side. Try everything on your own skin. <em>Pay only for what you keep.</em>
+          </p>
+
+          <form class="quick-join rise" data-waitlist-form data-source="hero" novalidate>
+            <label class="visually-hidden" for="hero-email">Email address</label>
+            <div class="quick-join__row">
+              <input id="hero-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" required aria-describedby="hero-email-msg" />
+              <button class="btn btn--primary" type="submit"><span class="btn__label">Join the first list</span></button>
+            </div>
+            <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <p class="form-msg" id="hero-email-msg" role="status" aria-live="polite" data-form-msg>Launch news for NCR, nothing else.</p>
+          </form>
+
+          <ul class="hero__facts rise" aria-label="What a Wingit trial includes">
+            <li><strong>₹0</strong> to try</li>
+            <li><strong>Sealed</strong> testers, fresh applicators</li>
+            <li><strong>Keep</strong> only what works</li>
+          </ul>
+        </div>
+
+        <div class="hero__art rise" aria-hidden="true">
+          <div class="hero__arch">
+            <img class="hero__portrait" src="assets/img/wink.webp" alt="" width="1000" height="1126" fetchpriority="high" />
+          </div>
+
+          <div class="tester-card float-a">
+            <p class="tester-card__label">Foundation · 4 shades on the wrist</p>
+            <ol class="tester-card__strip">
+              <li style="--c: var(--shade-2)"><span class="note">too light</span></li>
+              <li style="--c: var(--shade-3)" class="is-pick"><span class="note">this one!</span></li>
+              <li style="--c: #C77F52"><span class="note">too orange</span></li>
+              <li style="--c: var(--shade-4)"><span class="note">hmm</span></li>
+            </ol>
+          </div>
+
+          <p class="sticker float-b">Try first. <span>Wing&nbsp;it.</span></p>
+
+          <svg class="spark spark--1 sketch" viewBox="0 0 24 24"><use href="#i-sparkle" /></svg>
+          <svg class="spark spark--2 sketch" viewBox="0 0 24 24"><use href="#i-sparkle" /></svg>
+          <svg class="hero__qtip sketch draw" viewBox="0 0 140 40"><path pathLength="1" d="M18 21 122 19" /><path pathLength="1" d="M6 20c0-7 6-10 13-9 6 1 7 5 7 9s-2 8-8 8c-7 1-12-2-12-8ZM114 20c0-6 3-9 9-9 7 0 11 3 11 9 0 5-5 9-11 9-6 0-9-4-9-9Z" /></svg>
+        </div>
+      </div>
+      <a class="hero__scroll" href="#idea">See why we try first <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <!-- ───────────────────────── POINT OF VIEW ───────────────────────── -->
+    <section class="pov section" id="idea" aria-labelledby="pov-title">
+      <div class="container">
+        <p class="kicker reveal">The idea</p>
+        <div class="pov__grid">
+        <h2 class="pov__statement reveal" id="pov-title">
+          Most beauty is bought on faith — on a creator’s face, a studio swatch, a tester a hundred hands have touched.
+          <span class="pov__turn">We think the decision belongs <em>on your skin, in your light, at home.</em></span>
+        </h2>
+        <div class="pov__aside reveal">
+          <p class="pov__aside-label">Where beauty gets decided</p>
+          <ul class="crossed">
+            <li><s>a creator’s reel</s></li>
+            <li><s>a studio swatch</s></li>
+            <li><s>a tester everyone’s touched</s></li>
+            <li class="crossed__yes">your own skin <svg class="tick sketch draw" viewBox="0 0 40 30" aria-hidden="true"><path pathLength="1" d="M4 16l10 9L36 4" /></svg></li>
+          </ul>
+        </div>
+        </div>
+
+        <div class="five-faces reveal" data-five-faces>
+          <div class="five-faces__head">
+            <p class="five-faces__title">Same foundation.<br />Five faces. Five verdicts.</p>
+            <p class="five-faces__hint">Hover or tap a face to hear the verdict.</p>
+          </div>
+          <ul class="five-faces__row">
+            <li><button type="button" class="face" style="--skin: var(--shade-1)" aria-describedby="v1"><span class="face__dab"></span><span class="visually-hidden">Fair skin</span></button><span class="verdict" id="v1">“Too dark on me.”</span></li>
+            <li><button type="button" class="face" style="--skin: var(--shade-2)" aria-describedby="v2"><span class="face__dab"></span><span class="visually-hidden">Light-medium skin</span></button><span class="verdict" id="v2">“Too orange.”</span></li>
+            <li><button type="button" class="face" style="--skin: var(--shade-3)" aria-describedby="v3"><span class="face__dab"></span><span class="visually-hidden">Medium skin</span></button><span class="verdict" id="v3">“Perfect match.”</span></li>
+            <li><button type="button" class="face" style="--skin: var(--shade-4)" aria-describedby="v4"><span class="face__dab"></span><span class="visually-hidden">Tan skin</span></button><span class="verdict" id="v4">“Love the finish.”</span></li>
+            <li><button type="button" class="face" style="--skin: var(--shade-5)" aria-describedby="v5"><span class="face__dab"></span><span class="visually-hidden">Deep skin</span></button><span class="verdict" id="v5">“Not for me.”</span></li>
+          </ul>
+          <p class="five-faces__foot">Creators show you what works for <em>them</em>. Wingit is built so you can find out what works for <em>you</em> — before you pay.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── HOW A TRIAL WORKS ───────────────────────── -->
+    <section class="how section" id="how" aria-labelledby="how-title">
+      <div class="container">
+        <header class="section-head">
+          <p class="kicker reveal">How a Wingit trial works</p>
+          <h2 class="section-title reveal" id="how-title">The beauty counter comes home. <em>The pressure doesn’t.</em></h2>
+        </header>
+
+        <div class="steps-wrap">
+        <svg class="how__path sketch" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true"><path d="M10 22c120-14 210 12 330 4s210-14 320-3 220 10 300 1 140-8 230 1" /></svg>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step__num">01</span>
+            <svg class="step__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M20 6h24c3 0 5 2 5 5v42c0 3-2 5-5 5H20c-3 0-5-2-5-5V11c0-3 2-5 5-5Z" /><path pathLength="1" d="M23 22h18M23 30h12M23 38h15M28 51h8" /></svg>
+            <h3 class="step__title">Pick what you’re curious about</h3>
+            <p>Shades you’ve been circling, a serum you’ve read about, a scent you’ve never smelled. Nothing to pay online.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">02</span>
+            <svg class="step__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M8 24h48v30H8z" /><path pathLength="1" d="M24 24v-7c0-3 2-5 5-5h6c3 0 5 2 5 5v7M8 34h48M28 34v6h8v-6" /></svg>
+            <h3 class="step__title">A beauty partner brings the kit</h3>
+            <p>We call to schedule a visit. A trained beauty partner — our team is all-female — arrives with the sealed full-size product and a tester of the same item.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">03</span>
+            <svg class="step__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M15 49 49 15" /><path pathLength="1" d="M7 51c-1-4 1-7 5-8 3 0 6 2 6 5 1 4-1 7-5 8-3 0-6-2-6-5ZM46 13c0-4 3-6 6-6 4 0 6 2 6 5 0 4-2 7-6 7-3 0-6-3-6-6Z" /></svg>
+            <h3 class="step__title">Try it on your own skin</h3>
+            <p>Every tester is opened with a fresh, sealed Q-tip or sponge. Your partner helps with application or pairings — only if you want her to.</p>
+          </li>
+          <li class="step reveal">
+            <span class="step__num">04</span>
+            <svg class="step__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M12 22h40l-4 34H16z" /><path pathLength="1" d="M23 22v-4c0-6 4-10 9-10s9 4 9 10v4" /><path pathLength="1" d="m23 39 6 6 12-13" /></svg>
+            <h3 class="step__title">Keep what works. Pay for that.</h3>
+            <p>Hand back whatever doesn’t suit you — no order minimums, no questions, no fees, and no penalty if you keep nothing.</p>
+          </li>
+        </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── HYGIENE ───────────────────────── -->
+    <section class="clean" id="clean" aria-labelledby="clean-title">
+      <div class="container clean__grid">
+        <div class="clean__copy">
+          <p class="kicker kicker--light reveal">The clean-tester rule</p>
+          <h2 class="section-title section-title--light reveal" id="clean-title">Would you let a stranger put it on you?</h2>
+          <p class="clean__answer reveal"><span class="hand">Neither would we.</span></p>
+          <p class="clean__lede reveal">Beauty is personal, and it should be hygienic. No shared applicators. No double-dipping. That’s something a busy beauty counter can’t promise.</p>
+
+          <ul class="rules">
+            <li class="rule reveal">
+              <svg class="rule__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M10 18l4-5 4 5 4-5 4 5 4-5 4 5 4-5 4 5 4-5 4 5v34H10z" /><path pathLength="1" d="M20 42 44 26" /><path pathLength="1" d="M15 44c0-3 2-5 5-5 2 0 4 2 4 4s-2 5-5 5c-2 0-4-2-4-4ZM41 26c0-3 2-4 4-4 3 0 4 2 4 4 0 3-2 5-5 5-2 0-3-2-3-5Z" /></svg>
+              <div><h3>Sealed applicators</h3><p>Every tester is opened with a fresh, sealed Q-tip or sponge.</p></div>
+            </li>
+            <li class="rule reveal">
+              <svg class="rule__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M14 20h36l-4 36H18z" /><path pathLength="1" d="M10 20h44M26 20v-6h12v6M26 30v18M38 30v18" /></svg>
+              <div><h3>Disposed right after</h3><p>Used applicators never go back in the kit.</p></div>
+            </li>
+            <li class="rule reveal">
+              <svg class="rule__icon sketch draw" viewBox="0 0 64 64" aria-hidden="true"><path pathLength="1" d="M10 22 32 12l22 10v26L32 58 10 48z" /><path pathLength="1" d="M10 22l22 10 22-10M32 32v26" /><path pathLength="1" d="M20 17l22 10v9" /></svg>
+              <div><h3>Full-size stays sealed</h3><p>Until you decide it’s yours.</p></div>
+            </li>
+          </ul>
+        </div>
+        <figure class="clean__art reveal" aria-hidden="true">
+          <img src="assets/img/foam.webp" alt="" width="860" height="1142" loading="lazy" />
+          <span class="clean__tag hand">fresh swab, every shade ✓</span>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── EDITORIAL: WHY TRY FIRST ───────────────────────── -->
+    <section class="journal section" id="journal" aria-labelledby="journal-title">
+      <div class="container">
+        <header class="section-head section-head--split">
+          <div>
+            <p class="kicker reveal">The swatch journal</p>
+            <h2 class="section-title reveal" id="journal-title">Three things a screen <em>can’t</em> tell you.</h2>
+          </div>
+          <p class="section-head__aside reveal">Wingit starts with three categories — makeup, skincare and fragrance — because each one only tells the truth on skin.</p>
+        </header>
+
+        <article class="entry entry--shade">
+          <figure class="entry__art reveal">
+            <img src="assets/img/mascara.webp" alt="Illustration of a person applying mascara" width="560" height="716" loading="lazy" />
+            <ul class="entry__swatches" aria-hidden="true">
+              <li style="--c:#B4475E"></li><li style="--c:#8E2E45"></li><li style="--c:#C66A5A"></li><li style="--c:#6E2A33"></li>
+            </ul>
+          </figure>
+          <div class="entry__text reveal">
+            <span class="entry__no">i.</span>
+            <h3>Shade</h3>
+            <p class="entry__pull">A lipstick that’s perfect on a model can read brick-red on you.</p>
+            <p>Undertones shift between a phone screen and real skin, and between morning light and the office. So we bring a few shades, and you put them next to each other on your own lips, cheeks and wrist.</p>
+            <p class="hand entry__note">try 4 → keep 1</p>
+          </div>
+        </article>
+
+        <article class="entry entry--texture entry--flip">
+          <figure class="entry__art reveal">
+            <img src="assets/img/wash.webp" alt="Illustration of a woman smiling with skincare on her cheeks" width="760" height="965" loading="lazy" />
+          </figure>
+          <div class="entry__text reveal">
+            <span class="entry__no">ii.</span>
+            <h3>Texture</h3>
+            <p class="entry__pull">How it sinks in matters as much as what’s in it.</p>
+            <p>Sensitive, reactive or pigmented skin can’t afford guesswork. Feel the finish and see how your skin takes it before a full jar comes home with you.</p>
+            <p class="hand entry__note">sticky? greasy? just right.</p>
+          </div>
+        </article>
+
+        <article class="entry entry--scent">
+          <figure class="entry__art entry__art--drawn reveal" aria-hidden="true">
+            <svg class="perfume sketch draw" viewBox="0 0 260 300">
+              <path pathLength="1" d="M88 128c-14 6-22 18-22 34v92c0 14 10 24 24 24h80c14 0 24-10 24-24v-92c0-16-8-28-22-34z" />
+              <path pathLength="1" d="M108 128v-22h44v22M98 106V70c0-8 6-14 14-14h36c8 0 14 6 14 14v36z" />
+              <path pathLength="1" d="M92 196h76M104 214h52" />
+              <path pathLength="1" class="mist" d="M176 66c14-2 24-8 30-18M180 82c18 2 32-2 44-10M178 98c16 8 32 10 48 6" />
+              <path pathLength="1" d="M28 236c8-4 16 0 16 8M226 168c6-2 12 2 12 8" />
+            </svg>
+            <span class="wrist wrist--l hand">left wrist: A</span>
+            <span class="wrist wrist--r hand">right wrist: B ♡</span>
+          </figure>
+          <div class="entry__text reveal">
+            <span class="entry__no">iii.</span>
+            <h3>Scent</h3>
+            <p class="entry__pull">Fragrance is the hardest thing to buy blind.</p>
+            <p>A perfume changes once it meets your skin and settles over a few hours. Wear two on different wrists, live with them for an afternoon, and keep the one you can’t stop smelling.</p>
+            <p class="hand entry__note">no sachets, no minis — the real thing</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── CONCEPT PREVIEW ───────────────────────── -->
+    <section class="preview section" id="preview" aria-labelledby="preview-title">
+      <div class="container preview__grid">
+        <div class="preview__copy">
+          <p class="kicker reveal">A first look</p>
+          <h2 class="section-title reveal" id="preview-title">Others know what you bought. <em>Wingit will know what you tried.</em></h2>
+          <p class="reveal">We’re designing the app around your trials, not just your orders: what you asked to try, what you kept, and what didn’t work on your skin — so every next visit starts smarter.</p>
+          <p class="concept-note reveal"><span aria-hidden="true">✎</span> Concept design. Ordering, scheduling and trial notes aren’t live yet — they’ll arrive with the launch.</p>
+        </div>
+
+        <div class="phones reveal" role="img" aria-label="Concept app screens: a trial bag listing three products to try with nothing due today, and trial notes recording which shades were kept or handed back.">
+          <div class="phone phone--back" aria-hidden="true">
+            <div class="phone__screen">
+              <p class="ui-eyebrow">Trial notes · Saturday visit</p>
+              <p class="ui-title">What you tried</p>
+              <ul class="ui-notes">
+                <li><span class="dot" style="--c: var(--shade-3)"></span>Skin tint · shade 3 <b class="kept">kept</b></li>
+                <li><span class="dot" style="--c:#C77F52"></span>Skin tint · shade 1 <b>too orange</b></li>
+                <li><span class="dot" style="--c:#8E2E45"></span>Lip colour · berry <b class="kept">kept</b></li>
+                <li><span class="dot" style="--c:#C66A5A"></span>Lip colour · coral <b>not me</b></li>
+                <li><span class="dot dot--scent"></span>Eau de parfum · B <b class="kept">kept</b></li>
+              </ul>
+              <p class="ui-foot">Kept 3 · handed back 2</p>
+            </div>
+          </div>
+          <div class="phone phone--front" aria-hidden="true">
+            <div class="phone__screen">
+              <p class="ui-eyebrow">Your trial bag</p>
+              <p class="ui-title">3 things to try</p>
+              <ul class="ui-items">
+                <li>
+                  <span class="ui-thumb" style="--c: var(--shade-3)"></span>
+                  <span><b>Skin tint</b><small>3 shades to compare</small></span>
+                  <span class="ui-dots"><i style="--c:#C77F52"></i><i style="--c: var(--shade-3)"></i><i style="--c: var(--shade-4)"></i></span>
+                </li>
+                <li>
+                  <span class="ui-thumb ui-thumb--lip"></span>
+                  <span><b>Lip colour</b><small>4 shades</small></span>
+                  <span class="ui-dots"><i style="--c:#B4475E"></i><i style="--c:#8E2E45"></i><i style="--c:#C66A5A"></i></span>
+                </li>
+                <li>
+                  <span class="ui-thumb ui-thumb--scent"></span>
+                  <span><b>Eau de parfum</b><small>2 to wear side by side</small></span>
+                </li>
+              </ul>
+              <div class="ui-total"><span>Due today</span><b>₹0</b></div>
+              <span class="ui-btn">Request a visit</span>
+            </div>
+          </div>
+          <span class="phones__tag hand">concept, not live</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── OUR STORY ───────────────────────── -->
+    <section class="story section" id="story" aria-labelledby="story-title">
+      <div class="container story__grid">
+        <header class="story__head">
+          <p class="kicker reveal">Our story</p>
+          <h2 class="section-title reveal" id="story-title">It started at home. <em>For both of us.</em></h2>
+          <img class="story__jars reveal" src="assets/img/jars.webp" alt="" width="620" height="336" loading="lazy" />
+        </header>
+        <div class="story__notes">
+          <blockquote class="note-card reveal">
+            <p class="note-card__who">Nikunj’s mum</p>
+            <p>For years she’d fill a shopping cart with serums and foundations, sit on it for ten minutes, then close the laptop. She has hyperpigmentation, so products people swear by often leave dark patches or settle into the wrong undertone — and running her own business, she rarely has time to test things in a store.</p>
+          </blockquote>
+          <blockquote class="note-card note-card--tilt reveal">
+            <p class="note-card__who">Saksham</p>
+            <p>“I have eczema. There’s a long list of things I can’t put on my skin — the wrong one, and my face flares up for weeks. My skin tone also doesn’t match what most brands call universal.”</p>
+          </blockquote>
+          <p class="story__close reveal">We spoke with around 200 people who had the same problem: nobody wanted to be stuck with something that didn’t suit them. <span class="hand">So we built the trial first.</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── FAQ ───────────────────────── -->
+    <section class="faq section" id="faq" aria-labelledby="faq-title">
+      <div class="container faq__grid">
+        <header>
+          <p class="kicker reveal">Before you ask</p>
+          <h2 class="section-title reveal" id="faq-title">Good questions, <em>straight answers.</em></h2>
+        </header>
+        <div class="faq__list">
+          <details class="qa reveal">
+            <summary>Do I pay anything online?</summary>
+            <p>Nothing upfront. We bring full products and single-use testers home — you try, then pay only for what you keep. No order minimums, and no penalty if you keep nothing.</p>
+          </details>
+          <details class="qa reveal">
+            <summary>Where do the products come from?</summary>
+            <p>From authorised brand stores and leading beauty chains, with a valid invoice for every item. No dupes, no grey-market stock.</p>
+          </details>
+          <details class="qa reveal">
+            <summary>What exactly do I get to try?</summary>
+            <p>For every product you order, we carry a tester of the same item alongside the sealed full-size. You try the tester with a fresh Q-tip or sponge, then decide whether to buy the sealed one. We don’t send sachets or minis.</p>
+          </details>
+          <details class="qa reveal">
+            <summary>Who are the beauty partners?</summary>
+            <p>Trained female beauty advisors. They can help with application, suggest pairings or give you an in-depth take on a product — only if you want them to. They help you decide, but never push.</p>
+          </details>
+          <details class="qa reveal">
+            <summary>How does scheduling work?</summary>
+            <p>Once ordering opens, you place an order and we get in touch to schedule your visit.</p>
+          </details>
+          <details class="qa reveal">
+            <summary>Where will Wingit be available?</summary>
+            <p>We’re going live in NCR first. Join the list and tell us where you are — it helps us plan where to begin.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───────────────────────── JOIN ───────────────────────── -->
+    <section class="join" id="join" aria-labelledby="join-title">
+      <div class="container join__grid">
+        <div class="join__copy">
+          <p class="kicker kicker--light reveal">Pre-launch list · NCR</p>
+          <h2 class="join__title reveal" id="join-title">Be first in line when the kit <em>comes to your door.</em></h2>
+          <p class="reveal">We’ll email you when Wingit opens in your part of NCR. That’s it — no spam, no daily “offers”.</p>
+          <div class="join__art reveal" aria-hidden="true"><img src="assets/img/mascara.webp" alt="" width="560" height="716" loading="lazy" /></div>
+        </div>
+
+        <form class="join-card reveal" data-waitlist-form data-source="join" novalidate>
+          <p class="join-card__label" aria-hidden="true">Your trial card</p>
+
+          <div class="field">
+            <label for="join-email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input id="join-email" name="email" type="email" inputmode="email" autocomplete="email" required placeholder="you@email.com" aria-describedby="join-email-err" />
+            <p class="field__err" id="join-email-err" data-field-err="email"></p>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="join-name">First name <span class="opt">optional</span></label>
+              <input id="join-name" name="name" type="text" autocomplete="given-name" maxlength="80" />
+            </div>
+            <div class="field">
+              <label for="join-area">Where in NCR? <span class="opt">optional</span></label>
+              <select id="join-area" name="area">
+                <option value="">Choose one</option>
+                <option value="delhi">Delhi</option>
+                <option value="gurugram">Gurugram</option>
+                <option value="noida">Noida</option>
+                <option value="faridabad">Faridabad</option>
+                <option value="ghaziabad">Ghaziabad</option>
+                <option value="elsewhere">Outside NCR</option>
+              </select>
+            </div>
+          </div>
+
+          <fieldset class="field chips">
+            <legend>What would you try first? <span class="opt">optional</span></legend>
+            <label class="chip"><input type="checkbox" name="interests" value="makeup" /><span>Makeup</span></label>
+            <label class="chip"><input type="checkbox" name="interests" value="skincare" /><span>Skincare</span></label>
+            <label class="chip"><input type="checkbox" name="interests" value="fragrance" /><span>Fragrance</span></label>
+          </fieldset>
+
+          <input class="hp" type="text" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+          <button class="btn btn--primary btn--block" type="submit"><span class="btn__label">Join the first list</span></button>
+          <p class="form-msg" role="status" aria-live="polite" data-form-msg></p>
+          <p class="join-card__fine">We’ll only use this to tell you about Wingit’s launch. Read our <a href="https://wingitclub.com/policies/privacy-policy" target="_blank" rel="noopener">privacy policy</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__line">Try it on. Keep what works. <span class="hand">Wing the rest.</span></p>
+      <div class="footer__bar">
+        <img src="assets/img/wingit-logo-white.png" alt="Wingit" width="110" height="35" loading="lazy" />
+        <ul class="footer__links">
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="https://wingitclub.com/policies/privacy-policy" target="_blank" rel="noopener">Privacy</a></li>
+          <li><a href="https://wingitclub.com/policies/terms-of-service" target="_blank" rel="noopener">Terms</a></li>
+          <li><a href="https://www.instagram.com/wingitclubapp/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a></li>
+        </ul>
+        <p class="footer__copy">© 2026 Wingit · Launching in NCR</p>
+      </div>
+    </div>
+    <p class="footer__word" aria-hidden="true">wing it.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "wingit-prelaunch",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Wingit pre-launch landing page — static site + zero-dependency waitlist server",
+  "type": "module",
+  "scripts": { "start": "node server.mjs" },
+  "engines": { "node": ">=18" }
+}
