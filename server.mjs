@@ -95,7 +95,12 @@ async function serveStatic(req, res) {
   const file = join(ROOT, path);
   if (!file.startsWith(ROOT)) return send(res, 403, { error: "Forbidden" });
   try {
-    if (!(await stat(file)).isFile()) throw new Error();
+    const info = await stat(file);
+    if (info.isDirectory()) {
+      res.writeHead(301, { Location: url.pathname + "/" });
+      return res.end();
+    }
+    if (!info.isFile()) throw new Error();
     const type = TYPES[extname(file)] || "application/octet-stream";
     const cache = /\.(woff2|webp|png)$/.test(file) ? "public, max-age=604800" : "no-cache";
     res.writeHead(200, { "Content-Type": type, "Cache-Control": cache });

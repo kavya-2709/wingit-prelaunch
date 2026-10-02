@@ -1,0 +1,169 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!--
+    Wingit V2 illustration kit.
+    Hand-drawn, flat-with-shade objects that share one ink line and colour vars.
+    Colours resolve from CSS custom properties on the <use> element, so the same
+    drawing can sit on cobalt, butter or paper without redrawing it.
+  -->
+  <defs>
+    <style>
+      .o, .l, .t, .s { vector-effect: non-scaling-stroke; }
+      .s { fill: none; stroke: var(--stripe, #FF6B2C); stroke-width: calc(var(--ill-w, 2.2) * 1.6); stroke-linecap: round; }
+      .o { stroke: var(--ill-ink, #1C1A3F); stroke-width: var(--ill-w, 2.2); stroke-linecap: round; stroke-linejoin: round; }
+      .l { fill: none; stroke: var(--ill-ink, #1C1A3F); stroke-width: var(--ill-w, 2.2); stroke-linecap: round; stroke-linejoin: round; }
+      .t { fill: none; stroke: var(--ill-ink, #1C1A3F); stroke-width: calc(var(--ill-w, 2.2) * .6); stroke-linecap: round; }
+      .hl { fill: none; stroke: #FFFFFF; stroke-width: 3; vector-effect: non-scaling-stroke; stroke-linecap: round; opacity: .75; }
+    </style>
+
+    <path id="k-petal" class="o" fill="var(--petal, #F6A6B2)"
+      d="M0 -5C-10 -10 -17 -27 -10 -39C-7 -44 -2 -43 0 -37C2 -43 7 -44 10 -39C17 -27 10 -10 0 -5Z" />
+    <path id="k-petal-shade" fill="var(--petal-shade, #E98597)"
+      d="M0 -7C-5 -11 -8 -19 -5 -26C-2 -23 2 -23 5 -26C8 -19 5 -11 0 -7Z" />
+    <g id="g-flower">
+    <g>
+      <use href="#k-petal" />
+      <use href="#k-petal" transform="rotate(72)" />
+      <use href="#k-petal" transform="rotate(144)" />
+      <use href="#k-petal" transform="rotate(216)" />
+      <use href="#k-petal" transform="rotate(288)" />
+      <use href="#k-petal-shade" />
+      <use href="#k-petal-shade" transform="rotate(72)" />
+      <use href="#k-petal-shade" transform="rotate(144)" />
+      <use href="#k-petal-shade" transform="rotate(216)" />
+      <use href="#k-petal-shade" transform="rotate(288)" />
+    </g>
+    <circle class="o" r="8" fill="var(--pollen, #FFC94A)" />
+    <g fill="var(--ill-ink, #1C1A3F)">
+      <circle cx="0" cy="-13" r="1.8" /><circle cx="12" cy="-4" r="1.8" /><circle cx="8" cy="11" r="1.8" />
+      <circle cx="-8" cy="11" r="1.8" /><circle cx="-12" cy="-4" r="1.8" />
+    </g>
+  </g>
+    <g id="g-bud">
+    <path class="o" fill="var(--petal, #F6A6B2)" d="M0 -32C9 -26 11 -12 6 -4H-6C-11 -12 -9 -26 0 -32Z" />
+    <path fill="var(--petal-shade, #E98597)" d="M0 -30C4 -24 5 -14 3 -6H-1C1 -14 1 -24 0 -30Z" />
+    <path class="o" fill="var(--leaf, #5E9E57)" d="M-8 -8C-6 0 -2 4 0 6C2 4 6 0 8 -8C4 -4 -4 -4 -8 -8Z" />
+    <path class="l" d="M0 6V10" />
+  </g>
+    <g id="g-leaf">
+    <path class="o" fill="var(--leaf, #5E9E57)" d="M2 0C18 -19 54 -21 80 0C54 18 18 17 2 0Z" />
+    <path fill="var(--leaf-shade, #4A8546)" d="M4 0C20 14 52 16 78 0Z" />
+    <path class="t" d="M6 0C30 -1 54 -1 74 0M24 -1L34 -9M40 -1L52 -10M56 -1L64 -7M28 0L38 8M46 0L56 8" />
+  </g>
+    <g id="g-sprig">
+    <path class="l" d="M100 240C96 200 92 160 70 120C58 98 50 76 54 52" />
+    <path class="l" d="M92 172C112 150 136 134 152 100" />
+    <path class="l" d="M76 132C60 124 38 118 24 98" />
+    <path class="l" d="M64 104C76 90 90 84 104 70" />
+    <use href="#g-leaf" transform="translate(97 214) rotate(-150) scale(.85)" />
+    <use href="#g-leaf" transform="translate(98 196) rotate(-30) scale(.8)" />
+    <use href="#g-leaf" transform="translate(80 146) rotate(-165) scale(.72)" />
+    <use href="#g-leaf" transform="translate(130 140) rotate(-42) scale(.68)" />
+    <use href="#g-leaf" transform="translate(60 92) rotate(-120) scale(.55)" />
+    <use href="#g-bud" transform="translate(24 98) rotate(-34) scale(1)" />
+    <use href="#g-bud" transform="translate(152 100) rotate(24) scale(.95)" />
+    <use href="#g-flower" transform="translate(104 68) rotate(-20) scale(.55)" />
+    <use href="#g-flower" transform="translate(54 50) rotate(10) scale(.8)" />
+    <use href="#g-flower" transform="translate(118 150) rotate(-14) scale(.6)" />
+  </g>
+    <g id="g-bloom-bank">
+    <use href="#g-leaf" transform="translate(8 92) rotate(-25) scale(.7)" />
+    <use href="#g-leaf" transform="translate(212 96) rotate(-160) scale(.7)" />
+    <use href="#g-leaf" transform="translate(110 102) rotate(-95) scale(.62)" />
+    <use href="#g-leaf" transform="translate(96 100) rotate(-140) scale(.55)" />
+    <use href="#g-bud" transform="translate(160 44) rotate(14) scale(.8)" />
+    <use href="#g-bud" transform="translate(40 52) rotate(-18) scale(.7)" />
+    <use href="#g-flower" transform="translate(70 70) rotate(-8) scale(.62)" />
+    <use href="#g-flower" transform="translate(138 76) rotate(18) scale(.5)" />
+    <use href="#g-flower" transform="translate(186 82) rotate(4) scale(.36)" />
+  </g>
+    <g id="g-lipstick">
+    <path class="o" fill="var(--lip, #E2453C)" d="M11 44V20C11 12 21 6 33 9V44Z" />
+    <path fill="var(--lip-shade, #B9322D)" d="M26 44V8C29 8 31 8 33 9V44Z" />
+    <rect class="o" x="9" y="40" width="26" height="20" rx="2" fill="var(--metal, #FFD76A)" />
+    <rect class="o" x="6" y="58" width="32" height="14" rx="3" fill="var(--metal, #FFD76A)" />
+    <rect class="o" x="4" y="70" width="36" height="58" rx="5" fill="var(--case, #1C1A3F)" />
+    <path class="hl" d="M12 80V118" />
+  </g>
+    <g id="g-perfume">
+    <rect class="o" x="30" y="4" width="30" height="28" rx="6" fill="var(--cap, #FF6B2C)" />
+    <path fill="var(--cap-shade, #D9521C)" d="M50 6H54C57 6 58 8 58 10V28C58 30 57 30 55 30H50Z" />
+    <rect class="o" x="36" y="31" width="18" height="13" fill="var(--glass, #FBD3CB)" />
+    <path class="o" fill="var(--glass, #FBD3CB)" d="M12 60C12 50 20 44 30 44H60C70 44 78 50 78 60V126C78 132 74 136 68 136H22C16 136 12 132 12 126Z" />
+    <path fill="var(--liquid, #F49AA0)" d="M15 88H75V125C75 130 72 133 67 133H23C18 133 15 130 15 125Z" />
+    <rect class="o" x="27" y="72" width="36" height="28" rx="3" fill="var(--label, #FFF8EA)" />
+    <path class="t" d="M33 82H57M36 90H54" />
+    <path class="hl" d="M20 62V120" />
+  </g>
+    <g id="g-jar">
+    <rect class="o" x="10" y="24" width="72" height="44" rx="9" fill="var(--jar, #FFF1D2)" />
+    <path fill="var(--jar-shade, #F3DDB0)" d="M62 26H72C78 26 80 30 80 34V58C80 62 78 66 72 66H62Z" />
+    <rect class="o" x="24" y="36" width="44" height="20" rx="2" fill="var(--label, #FFF8EA)" />
+    <path class="t" d="M30 44H62M34 50H58" />
+    <rect class="o" x="6" y="6" width="80" height="20" rx="7" fill="var(--lid, #1C1A3F)" />
+    <path class="hl" d="M16 13H60" />
+  </g>
+    <g id="g-compact">
+    <circle class="o" cx="62" cy="44" r="40" fill="var(--compact, #FF6B2C)" />
+    <circle class="o" cx="62" cy="44" r="30" fill="var(--mirror, #DCE5FF)" />
+    <path class="hl" d="M44 30C48 24 54 20 60 19M46 40C50 34 54 31 58 30" />
+    <rect class="o" x="52" y="82" width="20" height="8" rx="3" fill="var(--metal, #FFD76A)" />
+    <ellipse class="o" cx="62" cy="106" rx="54" ry="26" fill="var(--compact, #FF6B2C)" />
+    <ellipse class="o" cx="62" cy="104" rx="38" ry="15" fill="var(--blush, #F48A93)" />
+    <path class="t" d="M40 102C50 96 70 96 84 102M46 108C56 104 70 104 80 108" />
+  </g>
+    <g id="g-qtips">
+    <path class="l" d="M16 38L112 14" />
+    <path class="l" d="M18 46L114 34" />
+    <ellipse class="o" cx="12" cy="39" rx="10" ry="7" fill="#FFFFFF" transform="rotate(-14 12 39)" />
+    <ellipse class="o" cx="116" cy="13" rx="10" ry="7" fill="#FFFFFF" transform="rotate(-14 116 13)" />
+    <ellipse class="o" cx="14" cy="46" rx="10" ry="7" fill="#FFFFFF" transform="rotate(-7 14 46)" />
+    <ellipse class="o" cx="118" cy="33" rx="10" ry="7" fill="#FFFFFF" transform="rotate(-7 118 33)" />
+  </g>
+    <g id="g-petal">
+    <path class="o" fill="var(--petal, #F6A6B2)" d="M-10 2C-8 -6 2 -9 10 -4C6 -2 6 2 9 5C2 9 -8 8 -10 2Z" />
+  </g>
+    <g id="g-cloth">
+    <path class="o" fill="var(--cloth, #FFF6E6)" d="M8 30L198 20L234 44L40 56Z" />
+    <path class="o" fill="var(--cloth, #FFF6E6)" d="M40 56L234 44L230 124C204 132 182 120 156 128C130 136 104 122 80 130C62 136 50 128 42 132Z" />
+    <path fill="var(--cloth-shade, #F0E1C4)" d="M40 56L234 44L234 58L44 70Z" />
+    <path class="s" d="M70 54L72 128M110 52L112 128M150 50L152 126M190 47L192 124M38 31L66 54M78 29L104 52M118 26L144 50M158 24L184 47" />
+    <path class="t" d="M98 64C100 90 96 108 100 126M172 60C174 84 170 104 174 122" />
+  </g>
+  </defs>
+
+  <!-- Five-petal blossom -->
+  <symbol id="flower" viewBox="-50 -50 100 100" overflow="visible"><use href="#g-flower" /></symbol>
+
+  <!-- Closed bud -->
+  <symbol id="bud" viewBox="-14 -34 28 44" overflow="visible"><use href="#g-bud" /></symbol>
+
+  <!-- Leaf -->
+  <symbol id="leaf" viewBox="0 -22 82 44" overflow="visible"><use href="#g-leaf" /></symbol>
+
+  <!-- Flowering sprig, grows from (100,240) -->
+  <symbol id="sprig" viewBox="0 0 200 240" overflow="visible"><use href="#g-sprig" /></symbol>
+
+  <!-- Low cluster of blossoms + leaves for ledges (width 220) -->
+  <symbol id="bloom-bank" viewBox="0 0 220 110" overflow="visible"><use href="#g-bloom-bank" /></symbol>
+
+  <!-- Lipstick -->
+  <symbol id="lipstick" viewBox="0 0 44 132" overflow="visible"><use href="#g-lipstick" /></symbol>
+
+  <!-- Perfume bottle -->
+  <symbol id="perfume" viewBox="0 0 90 140" overflow="visible"><use href="#g-perfume" /></symbol>
+
+  <!-- Cream jar -->
+  <symbol id="jar" viewBox="0 0 92 72" overflow="visible"><use href="#g-jar" /></symbol>
+
+  <!-- Open compact -->
+  <symbol id="compact" viewBox="0 0 124 134" overflow="visible"><use href="#g-compact" /></symbol>
+
+  <!-- Two cotton swabs -->
+  <symbol id="qtips" viewBox="0 0 130 54" overflow="visible"><use href="#g-qtips" /></symbol>
+
+  <!-- A single drifting petal -->
+  <symbol id="petal" viewBox="-12 -10 24 20" overflow="visible"><use href="#g-petal" /></symbol>
+
+  <!-- Folded striped cloth, sits on a surface at y=60 -->
+  <symbol id="cloth" viewBox="0 0 240 140" overflow="visible"><use href="#g-cloth" /></symbol>
+</svg>

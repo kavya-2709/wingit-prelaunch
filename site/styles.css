@@ -769,6 +769,14 @@ em { font-style: italic; }
   user-select: none;
 }
 
+/* ---------- Version switcher (review aid) ---------- */
+.versions { position: fixed; right: 14px; bottom: 14px; z-index: 60; display: flex; align-items: center; gap: 4px; padding: 5px; border-radius: var(--r-pill); background: var(--surface); border: 1.5px solid var(--ink-900); box-shadow: 3px 3px 0 var(--ink-900); font-size: .8rem; font-weight: 600; }
+.versions__k { padding: 0 .5rem; color: var(--ink-500); text-transform: uppercase; letter-spacing: .1em; font-size: .68rem; }
+.versions a { padding: .3rem .7rem; border-radius: var(--r-pill); text-decoration: none; }
+.versions a:hover { background: var(--blush-100); }
+.versions a[aria-current="page"] { background: var(--berry-700); color: #fff; }
+@media (max-width: 599px) { .versions { right: 8px; bottom: 8px; font-size: .72rem; } .versions__k { display: none; } }
+
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }

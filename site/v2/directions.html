@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Wingit V2 — Colour directions</title>
+<style>
+  @font-face { font-family: "Bricolage"; src: url(../assets/fonts/bricolage-grotesque-latin.woff2) format("woff2"); font-weight: 200 800; font-stretch: 75% 100%; }
+  @font-face { font-family: "Figtree"; src: url(../assets/fonts/figtree-latin.woff2) format("woff2"); font-weight: 400 700; }
+  @font-face { font-family: "Instrument Serif"; src: url(../assets/fonts/instrument-serif-italic-latin.woff2) format("woff2"); font-style: italic; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: Figtree, system-ui, sans-serif; background: #F4F1EA; color: #16143D; }
+  header { padding: 48px 48px 8px; max-width: 1100px; }
+  h1 { font-family: Bricolage; font-weight: 800; font-stretch: 80%; font-size: 52px; line-height: .95; margin: 0 0 12px; letter-spacing: -.02em; }
+  header p { color: #4A4870; margin: 0; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)); gap: 24px; padding: 32px 48px 64px; }
+  .card { border-radius: 22px; overflow: hidden; background: #fff; display: flex; flex-direction: column; box-shadow: 0 1px 0 #ddd; }
+  .stage { position: relative; height: 380px; overflow: hidden; background: var(--bg); color: var(--fg); padding: 28px; }
+  .stage h2 { position: relative; z-index: 2; font-family: Bricolage; font-weight: 800; font-stretch: 75%; font-size: 64px; line-height: .86; letter-spacing: -.03em; margin: 0; max-width: 6ch; }
+  .stage h2 em { font-family: "Instrument Serif"; font-style: italic; font-weight: 400; color: var(--accent); font-size: 1.08em; }
+  .mirror { position: absolute; right: 26px; bottom: 34px; width: 190px; height: 250px; border-radius: 999px 999px 999px 999px; background: var(--panel); border: 3px solid #1C1A3F; overflow: hidden; }
+  .mirror img { position: absolute; bottom: -6px; left: 50%; width: 120%; transform: translateX(-46%); }
+  .ledge { position: absolute; left: 0; right: 0; bottom: 0; height: 36px; background: var(--ledge); border-top: 3px solid #1C1A3F; }
+  .kit { position: absolute; bottom: 30px; }
+  .cta { position: absolute; left: 28px; bottom: 60px; z-index: 2; padding: 12px 20px; border-radius: 999px; font-weight: 700; background: var(--btn); color: var(--btn-fg); }
+  .meta { padding: 22px 26px 26px; font-size: 14px; line-height: 1.55; }
+  .meta h3 { font-family: Bricolage; font-weight: 700; font-size: 24px; margin: 0 0 6px; }
+  .tag { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; font-weight: 700; color: #4A4870; }
+  .sw { display: flex; gap: 8px; margin: 12px 0; flex-wrap: wrap; }
+  .sw span { display: grid; gap: 4px; font-size: 11px; color: #4A4870; text-align: center; }
+  .sw i { width: 44px; height: 44px; border-radius: 12px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.1); }
+  .verdict { margin-top: 12px; padding: 12px 14px; border-radius: 12px; background: #F4F1EA; }
+  .chosen { outline: 4px solid #2B3BD6; outline-offset: -4px; }
+  .chosen .verdict { background: #E7EAFF; }
+  svg.kit use { --ill-w: 2.2; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Wingit V2 · three colour directions</h1>
+  <p>Each palette is tested on the same mini-hero with Wingit’s real illustration (sage skin, ink line) and the new hand-drawn object kit, because a palette only works if the illustrations survive it.</p>
+</header>
+<div class="grid">
+
+  <article class="card">
+    <div class="stage" style="--bg:#1F4D36;--fg:#FFF8EA;--accent:#FF7A59;--panel:#FF7A59;--ledge:#C9E265;--btn:#C9E265;--btn-fg:#1F4D36;--petal:#FF9E8A;--petal-shade:#F07A63;--leaf:#C9E265;--leaf-shade:#9DBA3F">
+      <h2>Your face. Your <em>call.</em></h2>
+      <span class="cta">Join the first list</span>
+      <div class="mirror"><img src="../assets/img/wink.webp" alt="" /></div>
+      <svg class="kit" style="left:170px" width="120" height="110" viewBox="0 0 220 110"><use href="illustrations.svg#bloom-bank" /></svg>
+      <div class="ledge"></div>
+    </div>
+    <div class="meta">
+      <span class="tag">Direction A</span><h3>Botanical Pop</h3>
+      <div class="sw"><span><i style="background:#1F4D36"></i>#1F4D36</span><span><i style="background:#FF7A59"></i>#FF7A59</span><span><i style="background:#FFF8EA"></i>#FFF8EA</span><span><i style="background:#C9E265"></i>#C9E265</span><span><i style="background:#0F2A1D"></i>#0F2A1D</span></div>
+      <p class="verdict"><b>Read:</b> fresh and alive, but the illustrations’ sage-grey skin goes muddy against forest green, and the leaves vanish into the background. “Green + coral” also reads as clean-beauty or skincare-only, which narrows a platform that covers makeup and fragrance too.</p>
+    </div>
+  </article>
+
+  <article class="card chosen">
+    <div class="stage" style="--bg:#2B3BD6;--fg:#FFF8EA;--accent:#FFE27A;--panel:#FFE27A;--ledge:#FF6B2C;--btn:#FF6B2C;--btn-fg:#16143D">
+      <h2>Your face. Your <em>call.</em></h2>
+      <span class="cta">Join the first list</span>
+      <div class="mirror"><img src="../assets/img/wink.webp" alt="" /></div>
+      <svg class="kit" style="left:170px" width="120" height="110" viewBox="0 0 220 110"><use href="illustrations.svg#bloom-bank" /></svg>
+      <div class="ledge"></div>
+    </div>
+    <div class="meta">
+      <span class="tag">Direction B · Chosen</span><h3>Electric Beauty</h3>
+      <div class="sw"><span><i style="background:#2B3BD6"></i>#2B3BD6</span><span><i style="background:#FF6B2C"></i>#FF6B2C</span><span><i style="background:#FFE27A"></i>#FFE27A</span><span><i style="background:#FBF6EC"></i>#FBF6EC</span><span><i style="background:#16143D"></i>#16143D</span></div>
+      <p class="verdict"><b>Why it wins:</b> nobody in Indian beauty owns blue (Nykaa is pink, Tira red, Purplle purple, Sephora black and white), so it’s instantly ownable. Cobalt is the complement of the illustrations’ warm skin and pink flowers, so they <em>pop</em> rather than blend. The indigo/kohl associations make it culturally rooted, not just trendy. And tangerine plus butter keep it joyful rather than corporate.</p>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="stage" style="--bg:#E2412F;--fg:#FFF4EC;--accent:#3A1238;--panel:#D9C8F2;--ledge:#F7C8D0;--btn:#3A1238;--btn-fg:#FFF4EC">
+      <h2>Your face. Your <em>call.</em></h2>
+      <span class="cta">Join the first list</span>
+      <div class="mirror"><img src="../assets/img/wink.webp" alt="" /></div>
+      <svg class="kit" style="left:170px" width="120" height="110" viewBox="0 0 220 110"><use href="illustrations.svg#bloom-bank" /></svg>
+      <div class="ledge"></div>
+    </div>
+    <div class="meta">
+      <span class="tag">Direction C</span><h3>Modern Rouge</h3>
+      <div class="sw"><span><i style="background:#E2412F"></i>#E2412F</span><span><i style="background:#D9C8F2"></i>#D9C8F2</span><span><i style="background:#F7C8D0"></i>#F7C8D0</span><span><i style="background:#FFF4EC"></i>#FFF4EC</span><span><i style="background:#3A1238"></i>#3A1238</span></div>
+      <p class="verdict"><b>Read:</b> confident and editorial, but red is Tira’s territory, and it sits too close to V1’s berry to count as a genuinely second identity. Pink flowers on tomato red lose contrast, and white text on vermilion barely passes AA.</p>
+    </div>
+  </article>
+</div>
+</body>
+</html>
